@@ -1,4 +1,4 @@
-#include "stdafx.h"
+
 #pragma once
 class Field
 {
@@ -8,8 +8,7 @@ class Field
 
 public:
 	Field();
-	/*! Displays the playing field
-	*/
+	/*! Displays the playing field..do not rerurn value*/
 	void view();
 	
 	/**Moves the element to the left to position the empty cells*/

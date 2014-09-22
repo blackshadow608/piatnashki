@@ -1,5 +1,11 @@
 
 #pragma once
+/**@brief Class used for Piatnashki game.
+*
+Class randomly generates cells position,
+exchanges cells, retrieves cell value and checks for
+correct cell disposition
+*/
 class Field
 {
 	int mas[4][4];
@@ -7,23 +13,30 @@ class Field
 	int pozY;
 
 public:
+	/**@brief Constructor */
 	Field();
-	/*! Displays the playing field..do not rerurn value*/
+	/*!@brief Displays the playing field */
 	void view();
-	
-	/**Moves the element to the left to position the empty cells*/
+
+	/**@brief Moves the element to the right*/
 	void moveRight();
-	
-	/**Moves the element to the right to position the empty cells*/
+	/**@brief Moves the element to the left*/
 	void moveLeft();
-	/**Moves the element below the position of the empty cells*/
+	/**@brief Moves the element upwards*/
 	void moveUp();
-	/**Moves the top element of the position of the empty cells*/
+	/**@brief Moves the top element downwards*/
 	void moveDown();
-	/**Checks collected field or not*/
+	/**@brief Checks for correct cell disposition
+	@return True if dispotion is correct and false if incorrect
+	*/
 	bool location();
-	/**Generates a random position of the cells of the field*/
+	/**@brief Randomly generates cells position*/
 	void rnd();
+	/**@brief Retrieves cell value
+	@param i - Cell number
+	@return Cell value
+	@throw InputError Wrong cell number (should be from 0 to 15)
+	*/
+	int operator[] (int i);
 
 };
-

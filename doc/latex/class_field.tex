@@ -1,0 +1,92 @@
+\hypertarget{class_field}{\section{Field Class Reference}
+\label{class_field}\index{Field@{Field}}
+}
+
+
+Class used for Piatnashki game.  
+
+
+
+
+{\ttfamily \#include $<$Field.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_field_a3e804c92273d9159f413f227b535c672}{\hyperlink{class_field_a3e804c92273d9159f413f227b535c672}{Field} ()}\label{class_field_a3e804c92273d9159f413f227b535c672}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_field_a12d20b8d5e376a029550189df6d9a626}{void \hyperlink{class_field_a12d20b8d5e376a029550189df6d9a626}{view} ()}\label{class_field_a12d20b8d5e376a029550189df6d9a626}
+
+\begin{DoxyCompactList}\small\item\em Displays the playing field. \end{DoxyCompactList}\item 
+\hypertarget{class_field_ab137ddd411066f075a5a6cb03d64b2d8}{void \hyperlink{class_field_ab137ddd411066f075a5a6cb03d64b2d8}{move\-Right} ()}\label{class_field_ab137ddd411066f075a5a6cb03d64b2d8}
+
+\begin{DoxyCompactList}\small\item\em Moves the element to the right. \end{DoxyCompactList}\item 
+\hypertarget{class_field_a36aa9c7feac5b4421c182b2a03f1b404}{void \hyperlink{class_field_a36aa9c7feac5b4421c182b2a03f1b404}{move\-Left} ()}\label{class_field_a36aa9c7feac5b4421c182b2a03f1b404}
+
+\begin{DoxyCompactList}\small\item\em Moves the element to the left. \end{DoxyCompactList}\item 
+\hypertarget{class_field_a729a3b94f4985927218d335e490741b6}{void \hyperlink{class_field_a729a3b94f4985927218d335e490741b6}{move\-Up} ()}\label{class_field_a729a3b94f4985927218d335e490741b6}
+
+\begin{DoxyCompactList}\small\item\em Moves the element upwards. \end{DoxyCompactList}\item 
+\hypertarget{class_field_aeb0554af2d6021bc23e10c767f1d1cff}{void \hyperlink{class_field_aeb0554af2d6021bc23e10c767f1d1cff}{move\-Down} ()}\label{class_field_aeb0554af2d6021bc23e10c767f1d1cff}
+
+\begin{DoxyCompactList}\small\item\em Moves the top element downwards. \end{DoxyCompactList}\item 
+bool \hyperlink{class_field_ae057a0e1bffb8194b9f6ec9b35cc3fb9}{location} ()
+\begin{DoxyCompactList}\small\item\em Checks for correct cell disposition. \end{DoxyCompactList}\item 
+\hypertarget{class_field_a31e7327a94c297694487f4d70a4c3026}{void \hyperlink{class_field_a31e7327a94c297694487f4d70a4c3026}{rnd} ()}\label{class_field_a31e7327a94c297694487f4d70a4c3026}
+
+\begin{DoxyCompactList}\small\item\em Randomly generates cells position. \end{DoxyCompactList}\item 
+int \hyperlink{class_field_a17ad6c40891f2f666e84a698172b823b}{operator\mbox{[}$\,$\mbox{]}} (int i)
+\begin{DoxyCompactList}\small\item\em Retrieves cell value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class used for Piatnashki game. 
+
+Class randomly generates cells position, exchanges cells, retrieves cell value and checks for correct cell disposition 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_field_ae057a0e1bffb8194b9f6ec9b35cc3fb9}{\index{Field@{Field}!location@{location}}
+\index{location@{location}!Field@{Field}}
+\subsubsection[{location}]{\setlength{\rightskip}{0pt plus 5cm}bool Field\-::location (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_field_ae057a0e1bffb8194b9f6ec9b35cc3fb9}
+
+
+Checks for correct cell disposition. 
+
+\begin{DoxyReturn}{Returns}
+True if dispotion is correct and false if incorrect 
+\end{DoxyReturn}
+\hypertarget{class_field_a17ad6c40891f2f666e84a698172b823b}{\index{Field@{Field}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Field@{Field}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}int Field\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{class_field_a17ad6c40891f2f666e84a698172b823b}
+
+
+Retrieves cell value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & -\/ Cell number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Cell value 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Input\-Error} & Wrong cell number (should be from 0 to 15) \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Field.\-h\item 
+Field.\-cpp\end{DoxyCompactItemize}
